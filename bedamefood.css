@@ -1,0 +1,959 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* ...........Header start here............... */
+
+.header-top{
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(15px);
+    background-color: rgba(76, 76, 76, 0.378);
+    width: 100%;
+    height: auto;
+    padding: 10px 30px;
+    font-family: 'Asap Condensed', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0px 1px 10px rgb(41, 41, 41);
+}
+
+.logo{
+    width: 60px;
+}
+
+.logo-div p{
+    color: rgb(0, 183, 64);
+}
+
+.logo-div{
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.greenleaf{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.header-top p{
+    font-size: 16px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.header-links ul{
+    list-style-type: none;
+    text-transform: uppercase;
+    display: none;
+    gap: 40px;
+}
+
+.header-links li{
+    transition: all 1s ease;
+}
+
+.header-links li:hover{
+    transform: scale(1.1);
+}
+
+.header-links a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 1s ease;
+}
+
+.header-links a:hover{
+    color: rgb(0, 183, 64);
+}
+
+.header-cart{
+    display: flex;
+    margin: 0 80px 0 20px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12px 35px;
+    border-radius: 25px;
+    transition: all 0800ms ease;
+}
+
+.header-cart:hover{
+    background-color: rgb(56, 31, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.header-cart:hover .svg-cart{
+    fill: white;
+}
+
+.svg-cart{
+    width: 20px;
+    fill: rgb(0, 183, 64);
+    transition: all 0500ms ease;
+}
+
+/* ..............................Header ends here.................................. */
+
+/* ..........................header responsive start here.......... */
+
+@media screen and (min-width: 1000px) {
+    .header-links ul{
+        display: inline-flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-cart{
+        display: inline-flex;
+        margin: 0 5px 0 20px;
+        padding: 15px;
+        border-radius: 1px;
+    }
+
+    .logo-div{
+        margin: 0;
+        padding: 15px;
+    }
+    
+}
+/* ....................header responsive ends here............. */
+
+/* .............FIRST SECTION STARTS HERE.............. */
+
+.section-div1st{
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding-bottom: 40%;
+    background: url(./banner/home-banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 25%;
+    font-family: 'Questrial', sans-serif;
+    padding: 30px;
+    margin-bottom: 200px;
+}
+
+.content-text1{
+    text-transform: capitalize;
+    font-size: 50px;
+    text-align: center;
+}
+
+.name{
+   color: rgb(255, 179, 0);
+}
+
+.txt-break{
+    color: rgb(0, 183, 64);
+}
+
+.content-text3{
+    font-size: 19px;
+    margin: 20px 0 40px 0;
+}
+
+.background-btn{
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    border: none;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(0, 183, 64);
+    padding: 15px 70px;
+    transition: all 0600ms ease;
+}
+
+.background-btn:hover{
+    background-color: rgb(206, 144, 0);
+}
+
+/* ........................FIRST-SECTION ENDS HERE...................... */
+
+/* ...............SECOND-SECTION STARTS HERE........................... */
+.hero-section2{
+    padding: 70px 20px;
+    height: auto;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.boxes-grouped{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Questrial', sans-serif;
+}
+
+.section-head-p{
+    text-transform: uppercase;
+    font-family: 'Questrial', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.box-link{
+    text-decoration: none;
+    width: 33.33%;
+    color: black;
+    padding: 60px 30px;
+    margin: 40px 20px;
+    transition: all 0500ms ease;
+}
+
+.box-link:hover{
+    background-color: rgb(255, 255, 255);
+    transform: translateY(15px);
+    box-shadow: 4px 6px 30px rgb(189, 189, 189);
+}
+
+.section2-svg{
+    transition: all 0800ms ease;
+    fill: rgb(175, 175, 175);
+}
+
+.box-link:hover .section2-svg{
+   fill: rgb(0, 183, 64);
+}
+
+.p1{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.p2{
+    font-size: 18px;
+}
+
+    /* ...............SECOND-SECTION ENDS HERE........................... */
+/* .....................second-section responsive starts here............................. */
+
+@media screen and (max-width: 900px) {
+    .boxes-grouped{
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .box-link:hover{
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .box{
+        margin: 20px 20px;
+        padding: 60px 30px;
+        border: 1px solid rgb(0, 183, 64);
+        transition: all 1s ease;
+    }
+    
+    .box:hover{
+        border: 1px solid rgb(255, 179, 0);
+    }
+    }
+    
+ /* .....................second-section responsive ends here............................. */
+
+ /* .............THIRD-SECTION STARTS HERE..................... */
+
+ .hero-section3{
+    padding: 50px 10px;
+    font-family: 'Questrial', sans-serif;
+    padding: 80px;
+ }
+
+ .menu-container{
+     margin: auto;
+     margin-top: 70px;
+     background-color: rgb(255, 255, 255);
+     /* display: flex; */
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+     grid-auto-rows: auto;
+     gap: 20px;
+    }
+
+.food{
+    transition: all 0900ms ease;
+}
+
+ .food:hover{
+    transform: translateY(-15px);
+ }
+
+.food:hover a{
+    color: rgb(255, 179, 0);
+    text-decoration: underline rgb(102, 102, 102);
+}
+
+ .menu img{
+    width: 100%;
+    margin-bottom: 10px;
+ }
+
+ .menulink{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+ }
+
+.click-to-order{
+    color: rgb(0, 183, 64);
+}
+
+ .menulink:hover{
+    color: rgb(0, 183, 64);
+    text-decoration: underline;
+ }
+
+ .menulink:active{
+    color: rgb(255, 179, 0);
+ }
+
+ /* ...........................SECTION3 ENDS HERE..................................................... */
+
+/* ...........................SECTION4 STARTS HERE..................................................... */
+.hero-section4{
+    position: relative;
+    height: 750px;
+    background: linear-gradient(to right, rgba(208, 208, 208, 0), rgba(0, 0, 0, 0.903)), url(./banner/home-banner2.jpg);
+    /* background-blend-mode: multiply; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Questrial', sans-serif;
+    padding: 70px 20px;
+    color: white;
+}
+
+.select-container{
+    position: absolute;
+    width: 40%;
+    margin-right: 80px;
+    top: 100px;
+    right: 0;
+    /* padding: 30px; */
+}
+
+.select-p{
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.form-select{
+    width: 100%;
+    padding: 20px 0 20px 70px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 30px 20px;
+    transition: all 0700ms ease;
+}
+
+.form-select:focus{  
+    transform: translate(10px);
+    border: 1px solid rgb(255, 179, 0);
+}
+
+.a{
+    background-image: url(./icons-svg/calendar-solid.svg);
+}
+
+.b{
+    background-image: url(./icons-svg/heart-pulse-solid.svg);
+    background-position: 30px 22px;
+}
+
+.c{
+    background-image: url(./icons-svg/utensils-solid.svg);
+}
+
+.form-select option{
+    color: black;
+}
+
+.select-btn{
+    width: 100%;
+    font-size: 20px;
+    padding: 25px;
+    margin-bottom: 40px;
+    color: white;
+    background-color: rgb(206, 144, 0);
+    border: none;
+    text-align: center;
+    transition: all 0400ms ease;
+}
+
+.select-btn:hover{
+    background-color: rgb(255, 179, 0);
+    cursor: pointer;
+}
+
+.select-btn a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* .........................SECTION 4 ENDS HERE..................... */
+
+/* .................SECTION 4 RESPONSIVE STARTS HERE.................................. */
+@media screen and (max-width: 1000px){
+    .hero-section4{
+        background-image: url(./banner/home-banner2.jpg);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: visible;
+        text-align: center;
+        padding: 70px;
+        overflow: auto;
+    }
+
+    .select-container{
+        position: relative;
+        top: 0;
+        width: 100%;
+        margin: auto;
+        color: white;
+        padding: 30px;
+    }
+    
+    .form-select{
+        color: black;
+        background-color: white;
+        padding: 20px 0 20px 60px;
+        background-size: 20px;
+        background-position: 20px 20px;
+    }
+}
+/* ......................SECTION 4 RESPONSIVE ENDS HERE......................... */
+
+/* ......................SECTION 5 BEGINS HERE....................... */
+.hero-section5{
+    height: 700px;
+    margin: 20px 0;
+    padding: 50px;
+    background-image: url(./banner/home-banner1.jpg);
+    background-color: rgb(40, 40, 40);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+.play-p{
+    font-size: 38px;
+    margin: 20px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.video-frame{
+    width: 70%;
+    height: 70%;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgba(0, 183, 64, 0.226);
+    backdrop-filter: blur(10px);
+}
+
+.play-link-div{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+.play-link{
+    display: block;
+    width: 40%;
+    background-color: rgb(0, 183, 64);
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 20px auto;
+    padding: 10px;
+    transition: all 0800ms ease;
+}
+
+.play-link:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(206, 144, 0);
+    text-transform: capitalize;
+}
+
+.play-entity{
+    color: white;
+    transition: all 0800ms ease;
+}
+
+.play-link:hover .play-entity{
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+}
+
+@media screen  and (max-width: 800px) {
+    .video-frame{
+        width: 100%;
+    }
+
+    .play-link{
+        width: 80%;
+    }
+}
+/* ........................SECTION 5 ENDS HERE................................... */
+
+/* ...............SECTION 6 STARTS HERE.................... */
+.hero-section6{
+    background-color: rgb(248, 248, 248);
+    height: auto;
+    padding: 20px 80px;
+}
+
+.section6-p{
+    margin: 60px 0;
+}
+
+.menus-categories{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 230px;
+    gap: 25px;
+}
+
+.menucategories-link{
+    text-decoration: none;
+    background-color:rgb(206, 144, 0);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 60px;
+    transition: all 0800ms ease;
+    text-align: center;
+}
+
+.menucategories-link:hover{
+    background-size: 108%;
+}
+
+.top{
+    margin-bottom: 30px;
+}
+
+.menu-p{
+    font-size: 22px;
+    font-family: 'Asap Condensed', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.breakfast{
+    background-image: url(./menu/breakfast.jpeg);
+}
+
+.dessert{
+    background-image: url(./menu/desert.jpg);
+}
+
+.dinner{
+    background-image: url(./menu/dinner.jpeg);
+}
+
+.meatandfish{
+        background-image: url(./menu/meat\ and\ fish.jpg);
+}
+
+.lunch{
+        background-image: url(./menu/lunch.jpeg);
+}
+
+.salad{
+        background-image: url(./menu/salads.jpg);
+}
+
+.soup{
+        background-image: url(./menu/soups.jpg);
+}
+
+.vegetarian{
+        background-image: url(./menu/vegetarian.jpeg);
+}
+/* ..................SECTION6 ENDS HERE.......................... */
+
+/* ................SEVENTH SECTION STARTS HERE..................................... */
+.member-section{
+    background-color: rgb(235, 235, 235);
+    padding: 80px 30px;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+}
+
+.some-text{
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+.members-container{
+    width: 70%;
+    padding: 40px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 360px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.member-div{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+    transition: all  0800ms ease;
+}
+
+.member-div:hover .member-social{
+    width: 100%;
+    background-color: rgb(0, 183, 64);
+}
+
+.member-div:hover .social{
+    display: block;
+}
+
+.member{
+    width: 60%;
+    border: 1px solid rgb(0, 183, 64);
+    border-radius: 50%;
+}
+
+.member-text{
+    color: black;
+    margin: 27px 0 7px 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Asap Condensed', sans-serif;
+    /* font-weight: 600; */
+}
+
+.member-text2{
+    color: black;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.member-social{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: rgb(221, 221, 221);
+    padding: 5px 0;
+    transition: all 1s ease;
+}
+
+.member-social a{
+    text-decoration: none;
+    margin: 10px;
+}
+
+.social{
+    display: none;
+    width: 28px;
+    fill: white;
+    border-radius: 50%;
+    padding: 3px;
+    transition: all 0900ms ease;
+}
+
+.social:hover{
+    transform: scale(1.3);
+    background-color: white;
+}
+
+.youtube:hover{
+    fill: rgb(255, 15, 15);
+}
+
+.twitter:hover{
+    fill: rgb(0, 153, 255);
+}
+
+.facebook:hover{
+    fill: rgb(0, 76, 255);
+}
+/* ......................seventh section ends here............................... */
+
+/* ....................................................SECTION EIGTH STARTS HERE............................................ */
+.section-eight{
+    background-color: rgb(235, 235, 235);
+    font-family: 'Questrial', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(250, 250, 250);
+    margin-bottom: 50px;
+}
+
+.section-eight-contents{
+    width: 100%;
+    margin: auto;
+    padding: 60px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.content-text{
+    width: 60%;
+    padding: 40px;
+}
+
+.pi{
+    font-size: 25px;
+    font-family: 'Asap Condensed', sans-serif;
+    text-transform: capitalize;
+    color: rgb(0, 183, 64);
+}
+
+.pii{
+    font-size: 58px;
+    text-transform: capitalize;
+    margin: 25px 0;
+    word-break: break-all;
+}
+
+.piii{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.download-app a{
+    text-decoration: none;
+   
+}
+
+.appstore{
+    margin-right: 20px;
+    transition: all 0800ms ease;
+}
+
+.appstore:hover{
+    transform: scale(0.9);
+}
+
+.googleplay{
+    transition: all 0800ms ease;
+}
+
+.googleplay:hover{
+    transform: scale(0.9);
+}
+
+/* /* ....................................................SECTION EIGTH ENDS HERE............................................ */
+/* ............................RESPONSIVE............................ */
+@media screen and (max-width: 800px) {
+    .section-eight-contents{
+        display: block;
+        padding: 60px 10px;
+    }
+    
+    .content-text{
+        width: 100%;
+    }
+
+    .pi{
+        width: 70%;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: 600;
+    }
+
+    .piii{
+        color: white;
+    }
+
+    .phone-img{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .download-app{
+        line-height: 30px;
+    }
+}
+/* ............................RESPONSIVE ENDS HERE............................ */
+
+/* ............................................FOOTER (FIRST-LEG)....................................................... */
+.first-leg{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Questrial', sans-serif;
+    padding: 10px 15px;
+}
+
+.first-leg-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+/* .....................(logo styling)................................. */
+.logo-div-footer{
+    display: flex;
+    align-items: center;
+    flex: content;
+}
+
+.logo-div-footer p{
+    font-size: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.logo-footer{
+    width: 40px;
+}
+
+.greenleaf-footer{
+    color: rgb(0, 183, 64);
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    /* margin: 0 35px 10px 0; */
+}
+
+/* .....................(table styling)................................. */
+.table-div{
+    margin: auto 20px;
+    flex: content;
+}
+
+.table-contain{
+    text-align: left;
+}
+
+.table-contain, .table-data, .table-head{
+    font-size: 13px;
+    padding: 3px 20px 3px 0;
+    color: white;
+}
+
+.table-head{
+    text-transform: uppercase;
+}
+
+.table-data a{
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+
+.table-data a:hover{
+    color: rgb(255, 179, 0);
+    text-decoration: none;
+}
+
+.table-data a:active{
+    color: rgb(153, 107, 0);
+}
+
+/* .....................(social-icons styling)................................. */
+.svg-social-div{
+    flex: content;
+    margin: 15px;
+}
+
+.social-footer{
+    width: 18px;
+    margin-right: 15px;
+    transition: all 0900ms ease-in-out;
+}
+
+.social-footer:hover{
+    transform: rotate(360deg);
+}
+
+.svg-social-div a{
+    text-decoration: none;
+    fill: white;
+}
+
+.whatsapp:hover{
+    fill: rgb(0, 183, 64);
+}
+
+.instagram:hover{
+    fill: rgb(255, 0, 43);
+}
+
+.last{
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .table-div{
+        margin: 20px 0;
+    }
+}
+/* ............................................FOOTER (FIRST-LEG) ENDS HERE....................................................... */
+
+/* .....................................................FOOTER ( LAST-LEG STARTS HERE).................................................................................. */
+
+.last-leg{
+    background-color: rgb(0, 183, 64);
+    padding: 30px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.last-leg-p{
+    text-transform: capitalize;
+}
+
+.last-p2{
+    text-transform: uppercase;
+   color: rgb(255, 255, 255);
+}
